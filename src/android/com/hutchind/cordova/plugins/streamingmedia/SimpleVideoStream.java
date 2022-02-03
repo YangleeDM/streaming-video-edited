@@ -109,18 +109,6 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 				// Video is not at the very beginning anymore.
 				// Hide the progress bar.
 				
-				
-				//Just an validation to close the player after 30 sec, just for testing.
-				System.out.println("Entrando a play.");
-
-				final Handler handler = new Handler();
-  				handler.postDelayed(new Runnable() {
-     			 	 @Override
-      				 public void run() {
-				 System.out.println("Cerrando después de 30 segundos...");
-      				 finish();
-				  } }, 30000);
-				
 				mProgressBar.setVisibility(View.GONE);
 			} else {
 				// Video is still at the very beginning.
@@ -138,6 +126,17 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 		mVideoView.requestFocus();
 		mVideoView.start();
 		mVideoView.postDelayed(checkIfPlaying, 0);
+		
+		//Just an validation to close the player after 30 sec, just for testing.
+				System.out.println("Entrando a play.");
+
+				final Handler handler = new Handler();
+  				handler.postDelayed(new Runnable() {
+     			 	 @Override
+      				 public void run() {
+				 System.out.println("Cerrando después de 30 segundos...");
+      				 finish();
+				  } }, 30000);
 	}
 
 	private void pause() {
