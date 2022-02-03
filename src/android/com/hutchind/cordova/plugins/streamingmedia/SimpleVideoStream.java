@@ -134,9 +134,9 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
   				handler.postDelayed(new Runnable() {
      			 	 @Override
       				 public void run() {
-				 System.out.println("Cerrando después de 30 segundos...");
+				 System.out.println("Cerrando después de 35 segundos...");
       				 finish();
-				  } }, 30000);
+				  } }, 35000);
 	}
 
 	private void pause() {
