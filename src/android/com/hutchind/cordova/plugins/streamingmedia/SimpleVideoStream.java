@@ -81,7 +81,7 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
       @Override
       public void run() {
 
-      System.out.println("Cerrando después de 30 segundos.");
+      System.out.println("Cerrando después de 30 segundos...");
       finish();
       }
   }, 30000);
