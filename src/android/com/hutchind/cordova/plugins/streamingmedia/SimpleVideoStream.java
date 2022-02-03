@@ -84,7 +84,7 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
       System.out.println("Cerrando después de 30 segundos.");
       finish();
       }
-  }, 5000);
+  }, 30000);
 
 		mProgressBar.setVisibility(View.VISIBLE);
 		Uri videoUri = Uri.parse(mVideoUrl);
